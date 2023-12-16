@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>FlimcyFlix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+            background-color: #202020;
+            color: #fff;
+        }
+
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .video-card {
+            flex-basis: calc(25% - 20px);
+            background-color: #181818;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            margin-bottom: 20px;
+            text-align: center;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+            .video-card h2 {
+                margin-bottom: 10px;
+            }
+
+        .video-thumbnail {
+            width: 100%;
+            height: 150px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Row 1 -->
+        <div class="title">
+            <h2>All Comedy Movies</h2>
+        </div>
+
+
+        <div class="video-card" onclick="openNewPage('Movies', 'DOAWKCollection', 'DOTWK.html')">
+            <div class="video-thumbnail" style="background-image: url('Movies/DOAWKCollection/DOTWK.png'); "></div>
+            <h2>Diary Of A Wimpy Kid</h2>
+        </div>
+
+        <div class="video-card" onclick="openNewPage('Movies', 'DOAWKCollection', 'DOTWK2.html')">
+            <div class="video-thumbnail" style="background-image: url('Movies/DOAWKCollection/DOTWK2.png'); "></div>
+            <h2>Diary Of A Wimpy Kid 2</h2>
+        </div>
+
+        <div class="video-card" onclick="openNewPage('Movies', 'DOAWKCollection', 'DOAWK3.html')">
+            <div class="video-thumbnail" style="background-image: url('Movies/DOAWKCollection/DOAWK3.png'); "></div>
+            <h2>Diary Of A Wimpy Kid 3</h2>
+        </div>
+
+        <div class="video-card" onclick="openNewPage('Movies', 'Spirited2022', 'Spirited2022.html')">
+            <div class="video-thumbnail" style="background-image: url('Movies/Spirited2022/Spirited2022.png'); "></div>
+            <h2>Spirited 2022</h2>
+        </div>
+
+        <div class="video-card" onclick="openNewPage('Movies', 'JumpStreetCollection', '21JumpStreet.html')">
+            <div class="video-thumbnail" style="background-image: url('Movies/JumpStreetCollection/21JumpStreet.png'); "></div>
+            <h2>21 Jump Street</h2>
+        </div>
+
+        <!-- Row 2 -->
+        <!--<div class="video-card" onclick="openNewPage('Movies', 'DOAWKCollection', 'DOTWK.html')">
+        <div class="video-thumbnail" style="background-image: url('Movies/DOAWKCollection/DOTWK.png'); "></div>
+        <h2>Diary Of A Wimpy Kid</h2>
+    </div>
+
+    <div class="video-card" onclick="openNewPage('Movies', 'DOAWKCollection', 'DOTWK2.html')">
+        <div class="video-thumbnail" style="background-image: url('Movies/DOAWKCollection/DOTWK2.png'); "></div>
+        <h2>Diary Of A Wimpy Kid 2</h2>
+    </div>
+
+    <div class="video-card" onclick="openNewPage('Movies', 'DOAWKCollection', 'DOAWK3.html')">
+        <div class="video-thumbnail" style="background-image: url('Movies/DOAWKCollection/DOAWK3.png'); "></div>
+        <h2>Diary Of A Wimpy Kid 3</h2>
+    </div>
+
+    <div class="video-card" onclick="openNewPage('Movies', 'Spirited2022', 'Spirited2022.html')">
+        <div class="video-thumbnail" style="background-image: url('Movies/Spirited2022/Spirited2022.png'); "></div>
+        <h2>Spirited 2022</h2>
+    </div>-->
+    </div>
+
+    <script>
+        function openNewPage(...foldersAndPage) {
+
+            const path = foldersAndPage.join('/');
+
+            const imageUrl = `${foldersAndPage[0]}/${foldersAndPage[1]}/${foldersAndPage[2].replace('.html', '.png')}`;
+
+            window.location.href = path;
+
+            document.querySelector('.video-thumbnail').style.backgroundImage = `url('${imageUrl}')`;
+        }
+    </script>
+
+</body>
+
+</html>
