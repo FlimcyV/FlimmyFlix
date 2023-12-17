@@ -78,6 +78,11 @@
             width: 100%;
             box-sizing: border-box;
         }
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
     </style>
 </head>
 
@@ -87,7 +92,7 @@
         <div class="header-logo" onclick="refresh('index.html')">
             <img src="FlimcyFlixLogo.png" alt="Logo">
         </div>
-    </div>  
+    </div>
 
     <div class="main-container">
         <!-- Row 1 -->
@@ -116,8 +121,40 @@
             <h2>Spirited 2022</h2>
         </div>
 
-
         <!-- Row 2 -->
+        <!--Section 1-->
+        <div class="title" onclick="openNewPage('KidMovies', 'AllKidMovies', 'AllKidMovies.html')">
+            <h2>Kid Movies <--press me</h2>
+        </div>
+
+        <div class="video-card" onclick="openNewPage('ComedyMovies', 'DOAWKCollection', 'DOTWK.html')">
+            <div class="video-thumbnail" style="background-image: url('ComedyMovies/DOAWKCollection/DOTWK.png'); "></div>
+            <h2>Diary Of A Wimpy Kid</h2>
+        </div>
+
+        <div class="video-card" onclick="openNewPage('ComedyMovies', 'DOAWKCollection', 'DOTWK2.html')">
+            <div class="video-thumbnail" style="background-image: url('ComedyMovies/DOAWKCollection/DOTWK2.png'); "></div>
+            <h2>Diary Of A Wimpy Kid 2</h2>
+        </div>
+
+        <div class="video-card" onclick="openNewPage('ComedyMovies', 'DOAWKCollection', 'DOAWK3.html')">
+            <div class="video-thumbnail" style="background-image: url('ComedyMovies/DOAWKCollection/DOAWK3.png'); "></div>
+            <h2>Diary Of A Wimpy Kid 3</h2>
+        </div>
+
+        <div class="video-card" onclick="openNewPage('ComedyMovies', 'Spirited2022', 'Spirited2022.html')">
+            <div class="video-thumbnail" style="background-image: url('ComedyMovies/Spirited2022/Spirited2022.png'); "></div>
+            <h2>Spirited 2022</h2>
+        </div>
+
+
+        <!--Section 2-->
+        <div class="video-card" onclick="openNewPage('KidMovies', 'MonkeyKing', 'MonkeyKing.html')">
+            <div class="video-thumbnail" style="background-image: url('KidMovies/MonkeyKing/MonkeyKing.png'); "></div>
+            <h2>The Monkey King</h2>
+        </div>
+
+        <!-- Row 3 -->
         <!--Section 1-->
         <div class="title" onclick="openNewPage('ComedyMovies', 'AllComedyMovies', 'AllComedyMovies.html')">
             <h2>Comedy Movies <--press me</h2>
@@ -152,7 +189,7 @@
             <h2>21 Jump Street</h2>
         </div>
 
-        <!-- Row 3 -->
+        <!-- Row 4 -->
         <!--Section 1-->
         <div class="title" onclick="openNewPage('HorrorMovies', 'AllHorrorMovies', 'AllHorrorMovies.html')">
             <h2>Horror Movies <--press me</h2>
@@ -173,11 +210,12 @@
             <h2>X</h2>
         </div>
 
-        <div class="video-card" onclick="openNewPage('HorrorMovies', 'PH', 'PH.html')">
-            <div class="video-thumbnail" style="background-image: url('HorrorMovies/PH/PH.png');"></div>
-            <h2>Place Holder</h2>
+        <div class="video-card" onclick="openNewPage('HorrorMovies', 'FiveNightsAtFreddys', 'FiveNightsAtFreddys.html')">
+            <div class="video-thumbnail" style="background-image: url('HorrorMovies/FiveNightsAtFreddys/FiveNightsAtFreddys.png'); "></div>
+            <h2>Five Nights at Freddy's</h2>
         </div>
-
+        <!--Section 2-->
+        <!--Row 5-->
         <!--Section 1-->
         <div class="title">
             <h2>Weird Animations</h2>
@@ -206,6 +244,9 @@
         }
     </script>
 
+    <div class="top-right">
+        <a href="https://discord.gg/E8kuJ4jv9p">DISCORD LINK</ah2>
+    </div>
 </body>
 
 </html>
